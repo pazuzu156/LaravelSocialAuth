@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth\Social;
 
+use App\SocialAccount;
 use Illuminate\Http\Request;
 
 class GoogleController extends BaseController
