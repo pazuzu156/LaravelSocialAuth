@@ -24,7 +24,7 @@ class RegisterRequest extends BaseRequest
         return [
             'email'            => 'required|email|unique:accounts',
             'confirm-email'    => 'required|same:email',
-            'password'         => 'required|min:6|max:12',
+            'password'         => 'required|min:6|max:24',
             'confirm-password' => 'required|same:password',
         ];
     }
