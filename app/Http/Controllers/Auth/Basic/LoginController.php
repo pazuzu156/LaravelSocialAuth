@@ -25,6 +25,8 @@ class LoginController extends Controller
             } else {
                 return redirect()->route('login')->with('emsg', 'You must confirm your account. Please read the email you should have received.');
             }
+        } else {
+            return redirect()->route('login')->withInput()->withErrors(['password' => 'Invalid Password'])->with('emsg', 'Invalid form submission!');
         }
     }
 }

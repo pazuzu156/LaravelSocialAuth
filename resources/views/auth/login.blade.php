@@ -10,7 +10,7 @@
         @else
         <div class="form-group">
         @endif
-            {!! Form::label('email', 'Email', ['class' => 'col-lg-2']) !!}
+            {!! Form::label('email', 'Email', ['class' => 'col-lg-2 control-label']) !!}
             @if($errors->has('email'))
             <span class="text-danger">{{ $errors->first('email') }}</span>
             @endif
@@ -23,7 +23,7 @@
         @else
         <div class="form-group">
         @endif
-            {!! Form::label('password', 'Password', ['class' => 'col-lg-2']) !!}
+            {!! Form::label('password', 'Password', ['class' => 'col-lg-2 control-label']) !!}
             @if($errors->has('password'))
             <span class="text-danger">{{ $errors->first('password') }}</span>
             @endif

@@ -12,7 +12,7 @@ class BaseRequest extends FormRequest
      */
     protected function createDefaultValidator(ValidationFactory $factory)
     {
-        session()->flash('emsg', 'Invalid Form Submission');
+        session()->flash('emsg', 'Invalid form submission');
 
         return parent::createDefaultValidator($factory);
     }
