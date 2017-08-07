@@ -22,6 +22,10 @@ Route::get('/', function () {
     }
 });
 
+Route::get('/privacy', function () {
+    return view('privacy');
+});
+
 Route::prefix('auth')->group(function ($route) {
     $route->middleware(['guest'])->group(function ($route) {
         $route->get('login', function () {

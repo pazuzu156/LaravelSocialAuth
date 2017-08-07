@@ -20,7 +20,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-header-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" target="_blank"><i class="fo-github"></i> Github</a></li>
+                        <li><a href="https://github.com/pazuzu156/LaravelSocialAuth" target="_blank"><i class="fo-github"></i> Github</a></li>
                         @auth
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{!! Gravatar::avatar()->img(Auth::user()->email, 'Gravatar', ['width' => 24]) !!} {{ Auth::user()->email }} <span class="caret"></span></a>
@@ -57,6 +57,8 @@
                     Site &copy; 2017 <a href="https://kalebklein.com" target="_blank">Kaleb Klein</a>
                     |
                     <a href="https://validator.w3.org/check?uri=referer" target="_blank">Valid HTML5</a>
+                    |
+                    <a href="{{ url('/privacy') }}">Privacy Policy</a>
                 </div>
             </div>
         </div>
